@@ -1,0 +1,35 @@
+//MAIN BACKGROUND SIZE
+@media (max-width: 1860px) {
+    #main {
+        background-position: top center;
+    }
+}
+
+//HEADER TEXT SIZE
+@media (min-width: 1700px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1699px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media(max-width: 1399px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .header-wrapper {
+        padding-right: 5rem;
+    }
+}

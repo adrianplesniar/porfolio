@@ -1,0 +1,129 @@
+.project-wrapper {
+    display: inline-grid;
+    gap: 5%;
+    margin: 0 15%;
+    text-transform: uppercase;
+
+    .project-bg {
+        background: radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%),
+        radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%);
+        border-radius: 3rem;
+        box-shadow: 0 0 4px 4px rgba(254, 206, 190, 0.56),
+                    0 0 15px 24px rgba(254, 206, 190, 0.32);
+    }
+
+    .project-image-gallery {
+        position: relative;
+    }
+
+    .project-text {
+        position: relative;
+        padding: 10%;
+    }
+}
+
+//IMAGE LEFT
+
+.project-image-left {
+    grid-template-columns: 6fr 4fr;
+
+    .project-text {
+        align-self: end;
+        position: relative;
+        bottom: -10%;
+    }
+
+    .project-image-gallery {
+        align-self: start;
+    }
+}
+
+//IMAGE RIGHT
+
+.project-image-right {
+    grid-template-columns: 4fr 6fr;
+
+    .project-text {
+        align-self: start;
+    }
+
+    .project-image-gallery {
+        align-self: end;
+        position: relative;
+        bottom: -10%;
+    }
+}
+
+//IMAGE GALLERY
+
+.project-image-gallery {
+    display: flex;
+    flex-direction: column;
+
+    .project-title {
+        padding: 3% 0;
+    }
+
+    .image-arrow-wrapper {
+        display: inline-grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        width: 100%;
+
+        .image {
+            width: 100%;
+            overflow: hidden;
+            display: none;
+        }
+
+        .arrow {
+            align-self: center;
+
+            opacity: 0.8;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            opacity: 1;
+        }
+    }
+
+    .gallery-controls-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 3% 0;
+        gap: 2vw;
+
+        .control-square {
+            height: 0.7vw;
+            width: 0.7vw;
+            border: solid 2px white;
+            rotate: 45deg;
+            border-radius: 50%;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .control-square-active, .control-square:hover {
+            background: white;
+        }
+    }
+}
+
+//IMAGE LINKS IN TEXT
+
+.image-link {
+    background: white;
+    color: #772C78;
+    padding: 0 0.5%;
+    cursor: pointer;
+}
+
+//DIVIDER
+
+.divider {
+    margin: 7% 0 1.5%;
+    width: 100%;
+    height: 2vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.164) 85%, rgba(0,0,0,0) 100%);
+}

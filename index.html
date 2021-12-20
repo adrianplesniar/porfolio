@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a087e7f99b.js" crossorigin="anonymous"></script>
+    <title>Adrian Pleśniar</title>
+</head>
+<body>
+    <div class="header-bg"></div>
+
+    <header>
+        <div class="header-wrapper">
+            <div class="header-text">
+                <div class="h1 top-text">
+                    <h1>GRAPHIC DESIGNER</h1>
+                </div>
+                <div class="h1 middle-text">
+                    <h1>AND</h1>
+                </div>
+                <div class="h1 bottom-text">
+                    <h1>FRONT-END DEVELOPER</h1>
+                </div>
+            </div>
+            <div class="buttons-wrapper">
+                <a href="#" class="btn-portfolio">
+                    <div class="btn btn1">
+                        <h3>PORTFOLIO</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="btn btn2">
+                        <h3>RESUME</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-btn-wrapper">
+            <a href="#scroll-to">
+                <div class="scroll-btn">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <div class="body_bg_header"></div>
+
+    <main id="main">
+        <div class="porfolio-wrapper">
+            <div id="scroll-to"></div>
+            <div class="project-wrapper project-image-left">
+                <div class="project-bg project-image-gallery">
+                    <div class="project-title"><h4>"otchlan"</h4></div>
+                    <div class="image-arrow-wrapper">
+                        <a class="arrow previous" onclick="plusSlides(-1, 0)"><img src="/images/gallery_left_arrow.png" alt="previous photo"></a>
+                        <img class="image" src="/images/graphic_projects/grafika_rezerwatu/rezerwat napis grafika insta.png" alt="">
+                        <img class="image" src="/images/graphic_projects/grafika_rezerwatu/logo rezerwat 22.png" alt="">
+                        <img class="image" src="/images/graphic_projects/grafika_rezerwatu/rezerwat_ig_logo.png" alt="">
+                        <a class="arrow next" onclick="plusSlides(1, 0)"><img src="/images/gallery_right_arrow.png" alt="next photo"></a>
+                    </div>
+                    <div class="gallery-controls-wrapper">
+                        <div class="control-square" onclick="currentSlide(1, 0)"></div>
+                        <div class="control-square" onclick="currentSlide(2, 0)"></div>
+                        <div class="control-square" onclick="currentSlide(3, 0)"></div>
+                    </div>
+                </div>
+                <div class="project-bg project-text">
+                    <h4>Jedna z grafik z serii „rezerwat”, proekologicznego projektu społecznego. Założeniem było utrzymać jaskrawą kolorystykę, spójną z motywem serii oraz drapieżny wizerunek. Na grafice miał znaleźć się <span class="image-link" onclick="currentSlide(2, 0)">napis&nbsp;rezerwat</span>, zatem przystąpiłem do jego projektu. Kolejnym elementem jest abstrakcyjny <span class="image-link" onclick="currentSlide(3, 0)">okrąg</span> zaprojektowany od podstaw dla którego dodatkowo przygotowałem alternatywną wersję w razie potrzeby wykorzystania w innym miejscu.</h4>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="project-wrapper project-image-right">
+                <div class="project-bg project-text">
+                    <h4>Grafika użyta na okładce do singla o tytule „tripolar”. Dzięki użyciu m in narzędzi krzywych oraz procesu posteryzacji udało mi się osiągnąć połączenie klimatu retro z future vibes. <span class="image-link" onclick="currentSlide(2, 1)">Źródłowe&nbsp;zdjęcie</span> nie było zbyt dobrej jakości na szczęście na potrzeby mojej koncepcji spełniło swoje zadanie.</h4>
+                </div>
+                <div class="project-bg project-image-gallery">
+                    <div class="project-title"><h4>"tripolar"</h4></div>
+                    <div class="image-arrow-wrapper">
+                        <a class="arrow previous" onclick="plusSlides(-1, 1)"><img src="/images/gallery_left_arrow.png" alt="previous photo"></a>
+                        <img class="image" src="/images/graphic_projects/tripolar/sunoku dobre.png" alt="">
+                        <img class="image" src="/images/graphic_projects/tripolar/IMG_E9853.JPG" alt="">
+                        <a class="arrow next" onclick="plusSlides(1, 1)"><img src="/images/gallery_right_arrow.png" alt="next photo"></a>
+                    </div>
+                    <div class="gallery-controls-wrapper">
+                        <div class="control-square" onclick="currentSlide(1, 1)"></div>
+                        <div class="control-square" onclick="currentSlide(2, 1)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/scripts/gallery.js"></script>
+    <!-- <script src="/scripts/parallax.js"></script> -->
+</body>
+</html>
