@@ -7,6 +7,7 @@ let scrollBtn = document.querySelector('.scroll-btn-wrapper');
 window.addEventListener('scroll', function() {
     let value = window.scrollY;
 
-    headerText.style.top = value * 0.1 + 'px';
-    gallery.style.top = value * -0.1 + 'px';
+    headerText.style.top = value * 0.5 + 'px';
+    gallery.style.top = value * -0.5 + 'px';
+    scrollBtn = value * -0.5 + 'px';
 })
