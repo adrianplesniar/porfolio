@@ -10,30 +10,32 @@
 
 header {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
+    width: 100%;
+
+    .text-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     h1 {
-        // font-size: 6rem;
+        font-size: calc(5vw + 1rem);
         font-family: Averil;
         color: #EEEEEE;
         margin: 0;
         line-height: 1;
     }
 
-    .header-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-right: 10%;
-    }
-
     .header-text {
         background: linear-gradient(260deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 74%);
         border-radius: 0 1rem 1rem 0;
         padding: 1.2rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 5rem;
 
         position: relative;
+        right: calc(0vw + 10%);
 
         display: flex;
         flex-direction: column;
@@ -59,38 +61,38 @@ header {
         }
     }
 
-    .buttons-wrapper {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 1.2rem;
+    // .buttons-wrapper {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     padding-right: 1.2rem;
 
-        position: relative;
+    //     position: relative;
 
-        h3 {
-            margin: 0;
-        }
+    //     h3 {
+    //         margin: 0;
+    //     }
 
-        .btn {
-            padding: 1rem 2.5rem;
-            box-shadow: 0 0 15px 6px rgba(255, 255, 255, 0.06);
-            filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
-        }
+    //     .btn {
+    //         padding: 1rem 2.5rem;
+    //         box-shadow: 0 0 15px 6px rgba(255, 255, 255, 0.06);
+    //         filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+    //     }
 
-        .btn-portfolio {
-            margin-right: 2rem;
-        }
+    //     .btn-portfolio {
+    //         margin-right: 2rem;
+    //     }
         
-        .btn1 {
-            color: #FFFFFF;
-            background: linear-gradient(156deg, rgba(126,42,133,1) 0%, rgba(126,42,133,1) 25%, rgba(184,62,194,1) 50%, rgba(126,42,133,1) 75%, rgba(126,42,133,1) 100%);
-            border: 2px solid rgba(0, 0, 0, 0.45);
-        }
+    //     .btn1 {
+    //         color: #FFFFFF;
+    //         background: linear-gradient(156deg, rgba(126,42,133,1) 0%, rgba(126,42,133,1) 25%, rgba(184,62,194,1) 50%, rgba(126,42,133,1) 75%, rgba(126,42,133,1) 100%);
+    //         border: 2px solid rgba(0, 0, 0, 0.45);
+    //     }
 
-        .btn2 {
-            color: #F8E6FA;
-            border: 2px solid #7E2A85;
-        }
-    }
+    //     .btn2 {
+    //         color: #F8E6FA;
+    //         border: 2px solid #7E2A85;
+    //     }
+    // }
 }
 
 .scroll-btn-wrapper {
@@ -98,12 +100,13 @@ header {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    animation: slide 7s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    animation: slide 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
     
     .scroll-btn {
         transform: rotate(45deg);
         border: solid 2px white;
         padding: 0.5rem;
+        position: relative;
 
         i {
             color: white;

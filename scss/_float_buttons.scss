@@ -1,0 +1,97 @@
+.buttons-wrapper {
+    position: relative;
+    height: 100px;
+    
+    .float-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: calc(0.4vw + 0.9rem);
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1.1% 3%;
+        box-shadow: 0 0 15px 6px #ffffff0f;
+        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+        cursor: pointer;
+        bottom: calc(50vh - 25%);
+        transition: all 0.3s ease-in-out;
+        position: fixed;
+        z-index: 99;
+    }
+    
+    .porfolio-icon {
+        visibility: hidden;
+        position: absolute;
+        font-size: 2rem;
+        left: 26.8%;
+        transform: translateY(-40%);
+    }
+
+    .resume-icon {
+        visibility: hidden;
+        position: absolute;
+        font-size: 1.7rem;
+        left: 25%;
+        transform: translateY(-43%);
+    }
+    
+    .btn1 {
+        color: #FFFFFF;
+        background: linear-gradient(156deg, rgba(126,42,133,1) 0%, rgba(126,42,133,1) 25%, rgba(184,62,194,1) 50%, rgba(126,42,133,1) 75%, rgba(126,42,133,1) 100%);
+        border: 2px solid rgba(0, 0, 0, 0.45);
+
+        right: calc(13vw + 10% + 5px);
+        margin-right: 2rem;
+    }
+
+    .btn2:hover {
+        background: #a036aa2f;
+    }
+
+    .btn2 {
+        color: #F8E6FA;
+        border: 2px solid #7E2A85;
+
+        right: calc(0vw + 10%);
+    }
+
+    .floating {
+
+        i {
+            visibility: visible;
+        }
+
+        .btn {
+            position: fixed;
+            border-radius: 50%;
+            right: calc(5vw);
+            height: 3vw;
+            width: 3vw;
+            padding: 0;
+            transform: translateZ(0);
+            bottom: 30px;
+
+            h3 {
+                visibility: hidden;
+            }
+        }
+
+        .btn1{
+            bottom: 120px;
+            margin: 0;
+        }
+
+        .btn2 {
+            bottom: 30px;
+            background: #000000ba;
+        }
+    }
+}

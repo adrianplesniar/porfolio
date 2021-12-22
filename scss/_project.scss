@@ -70,17 +70,23 @@
         width: 100%;
 
         .image {
-            width: 100%;
             overflow: hidden;
             display: none;
+            min-height: 100%;
+            width: 100%;
         }
 
         .arrow {
             align-self: center;
+            max-width: 100%;
 
             opacity: 0.8;
             transition: 0.2s;
             cursor: pointer;
+
+            img {
+                max-width: 100%;
+            }
         }
 
         .arrow:hover {

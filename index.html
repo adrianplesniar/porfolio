@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a087e7f99b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 10) {
+        $(".float-button").addClass("floating");
+        } else {
+        $(".float-button").removeClass("floating");
+        }
+    });
+    });
+    </script>
     <title>Adrian Pleśniar</title>
 </head>
 <body>
@@ -13,28 +25,31 @@
 
     <header>
         <div class="header-wrapper">
-            <div class="header-text">
-                <div class="h1 top-text">
-                    <h1>GRAPHIC DESIGNER</h1>
-                </div>
-                <div class="h1 middle-text">
-                    <h1>AND</h1>
-                </div>
-                <div class="h1 bottom-text">
-                    <h1>FRONT-END DEVELOPER</h1>
+            <div class="text-wrapper">
+                <div class="header-text">
+                    <div class="h1 top-text">
+                        <h1>GRAPHIC DESIGNER</h1>
+                    </div>
+                    <div class="h1 middle-text">
+                        <h1>AND</h1>
+                    </div>
+                    <div class="h1 bottom-text">
+                        <h1>FRONT-END DEVELOPER</h1>
+                    </div>
                 </div>
             </div>
+
             <div class="buttons-wrapper">
-                <a href="#" class="btn-portfolio">
+                <div class="float-button">
                     <div class="btn btn1">
                         <h3>PORTFOLIO</h3>
+                        <i class="fas fa-border-all porfolio-icon"></i>
                     </div>
-                </a>
-                <a href="#">
                     <div class="btn btn2">
                         <h3>RESUME</h3>
+                        <i class="fas fa-id-card-alt resume-icon"></i>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <div class="scroll-btn-wrapper">
@@ -97,5 +112,6 @@
 
     <script src="/scripts/gallery.js"></script>
     <script src="/scripts/parallax.js"></script>
+    <!-- <script src="/scripts/float_buttons.js"></script> -->
 </body>
 </html>
