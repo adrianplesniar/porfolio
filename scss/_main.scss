@@ -20,6 +20,57 @@ main {
 
     #scroll-to {
         position: relative;
+        top: 15px;
+    }
+
+    #portfolio-scroll, #resume-scroll {
+        position: relative;
         top: -50px;
+    }
+
+    .resume {
+        display: none;
+    }
+
+    .resume {
+        position: relative;
+        top: 70px;
+        padding: 0 10%;
+        margin-bottom: 100px;
+
+        a {
+            position: relative;
+            z-index: 98;
+        }
+
+        .resume-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .resume-image-wrapper {
+                padding: 30px;
+                max-width: 100%;
+                background: radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%),
+                radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%);
+                border-radius: 1rem;
+                box-shadow: 0 0 4px 4px rgba(254, 206, 190, 0.56),
+                    0 0 15px 24px rgba(254, 206, 190, 0.32);
+
+                @media (max-width: 700px) {
+                    padding: 20px;
+                }
+            }
+
+            img {
+                width: 100%;
+                border-radius: 1rem;
+
+                transition: opacity 0.2s ease-in-out;
+            }
+
+            img:hover {
+                opacity: 0.9;
+            }
+        }
     }
 }

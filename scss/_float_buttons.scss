@@ -25,41 +25,44 @@
         transition: all 0.3s ease-in-out;
         position: fixed;
         z-index: 99;
-    }
-    
-    .porfolio-icon {
-        visibility: hidden;
-        position: absolute;
-        font-size: 2rem;
-        left: 26.8%;
-        transform: translateY(-40%);
+
+        color: #F8E6FA;
+        border: 2px solid #7E2A85;
     }
 
-    .resume-icon {
-        visibility: hidden;
-        position: absolute;
-        font-size: 1.7rem;
-        left: 25%;
-        transform: translateY(-43%);
-    }
-    
-    .btn1 {
+    .btn.active-view {
         color: #FFFFFF;
         background: linear-gradient(156deg, rgba(126,42,133,1) 0%, rgba(126,42,133,1) 25%, rgba(184,62,194,1) 50%, rgba(126,42,133,1) 75%, rgba(126,42,133,1) 100%);
         border: 2px solid rgba(0, 0, 0, 0.45);
+    }
+    
+    .btn:not(.active-view):hover {
+        background: #a036aa2f;
+    }
 
+    i {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .porfolio-icon {
+        font-size: 2rem;
+        bottom: 0.7rem;
+        left: 0.9rem;
+    }
+
+    .resume-icon {
+        font-size: 1.7rem;
+        bottom: 1rem;
+        left: 0.85rem;
+    }
+    
+    .btn1 {
         right: calc(13vw + 10% + 5px);
         margin-right: 2rem;
     }
 
-    .btn2:hover {
-        background: #a036aa2f;
-    }
-
     .btn2 {
-        color: #F8E6FA;
-        border: 2px solid #7E2A85;
-
         right: calc(0vw + 10%);
     }
 
@@ -72,12 +75,11 @@
         .btn {
             position: fixed;
             border-radius: 50%;
-            right: calc(5vw);
-            height: 3vw;
-            width: 3vw;
+            right: 5rem;
+            height: 3.6rem;
+            width: 3.6rem;
             padding: 0;
             transform: translateZ(0);
-            bottom: 30px;
 
             h3 {
                 visibility: hidden;
@@ -89,8 +91,11 @@
             margin: 0;
         }
 
-        .btn2 {
+        .btn2{
             bottom: 30px;
+        }
+
+        .btn:not(.active-view) {
             background: #000000ba;
         }
     }
