@@ -98,5 +98,9 @@
         .btn:not(.active-view) {
             background: #000000ba;
         }
+
+        .btn:not(.active-view):hover {
+            background: #a036aacb;
+        }
     }
 }

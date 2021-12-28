@@ -105,6 +105,23 @@
                         font-size: 1.5vw;
                     }
                 }
+
+                .gallery-controls-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    padding: 3% 0;
+                    gap: 2vw;
+            
+                    .control-square {
+                        height: 1.2vw;
+                        width: 1.2vw;
+                        border: solid 2px white;
+                        rotate: 45deg;
+                        border-radius: 50%;
+                        transition: 0.3s;
+                        cursor: pointer;
+                    }
+                }
             }
         }
         
@@ -112,7 +129,7 @@
         //IMAGE LEFT
 
         .project-image-left {
-            grid-template-columns: 11fr 10fr;
+            grid-template-columns: 6fr 4fr;
 
             .project-text {
                 align-self: end;
@@ -184,26 +201,37 @@
             }
         }
 
-        
+        main {
+
+            .porfolio-wrapper {
+                h4 {
+                    font-size: 1.8vw;
+                }
+            }
+
+            .project-wrapper {
+                gap: 4%;
+                margin: 0 9%;
+
+                .project-bg {
+                    border-radius: 1rem;
+                }
+
+                .project-text {
+                    padding: 5%;
+
+                    h4 {
+                        font-size: 1.7vw;
+                    }
+                }
+            }
+        }
     }
 }
 
 //MAX WIDTH 900px
 
 @media (max-width: 900px) {
-    // body {
-    //     .header-bg {
-    //         background: url('../images/header_bg.png');
-    //         background-size: cover;
-    //         // background-position-x: -200px;
-    //         position: fixed;
-    //         // top: 0;
-    //         // height: 100vh;
-    //         // width: 100vw;
-    //         z-index: -2;
-    //     }
-    // }
-
     header {
         
         h1 {
@@ -212,9 +240,175 @@
 
         .buttons-wrapper {
             h3 {
-                font-size: calc(0.4vw + 0.7rem);
+                font-size: calc(0.1vw + 1.4rem);
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 0.9% 2.5%;
+                box-shadow: 0 0 15px 6px #ffffff0f;
+                filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+                cursor: pointer;
+                bottom: calc(50vh - 10%);
+                transition: all 0.3s ease-in-out;
+                position: fixed;
+                z-index: 99;
+            }
+
+            .btn1 {
+                margin-right: 5rem;
+            }
+        }
+
+        .scroll-btn-wrapper {
+            i {
+                color: white;
+                transform: rotate(-45deg);
+                font-size: 1.5rem;
             }
         }
     }
+
+    body {
+        main {
+            padding: 5% 0;
+
+            .porfolio-wrapper {
+                h4 {
+                    font-size: 2.8vw;
+                }
+            }
+
+            .project-wrapper {
+                display: flex;
+                flex-direction: column;
+                margin: 0 15%;
+                text-transform: uppercase;
+
+                .project-text {
+
+                    h4 {
+                        font-size: 2.7vw;
+                    }
+                }
+            
+                .project-bg {
+                    background: radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%),
+                    radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%);
+                    border-radius: 1rem;
+                    box-shadow: 0 0 4px 4px rgba(254, 206, 190, 0.56),
+                                0 0 15px 24px rgba(254, 206, 190, 0.32);
+                }
+            
+                .project-image-gallery {
+                    position: relative;
+                    margin-right: 10%;
+                    margin-bottom: 5%;
+                }
+            
+                .project-text {
+                    position: relative;
+                    padding: 4%;
+                    margin-left: 5%;
+                }
+            }
+            
+            //IMAGE LEFT
+            
+            .project-image-left {
+            
+                .project-text {
+                    align-self: end;
+                    position: relative;
+                    bottom: 0;
+                }
+            
+                .project-image-gallery {
+                    align-self: start;
+                }
+            }
+            
+            //IMAGE RIGHT
+            
+            .project-image-right {
+            
+                .project-text {
+                    align-self: start;
+                    order: (2);
+                }
+            
+                .project-image-gallery {
+                    align-self: end;
+                    position: relative;
+                    bottom: 0;
+                    order: (1);
+                }
+            }
+            
+            //IMAGE GALLERY
+            
+            .project-image-gallery {
+                display: flex;
+                flex-direction: column;
+            
+                .project-title {
+                    padding: 3% 0;
+                }
+            
+                .image-arrow-wrapper {
+                    display: inline-grid;
+                    grid-template-columns: 1fr 10fr 1fr;
+                    width: 100%;
+            
+                    .image {
+                        overflow: hidden;
+                        display: none;
+                        min-height: 100%;
+                        width: 100%;
+                    }
+            
+                    .arrow {
+                        align-self: center;
+                        max-width: 100%;
+                        max-height: 100%;
+            
+                        opacity: 0.8;
+                        transition: 0.2s;
+                        cursor: pointer;
+            
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+            
+                    .arrow:hover {
+                        opacity: 1;
+                    }
+                }
+            
+                .gallery-controls-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    padding: 3% 0;
+                    gap: 2vw;
+            
+                    .control-square {
+                        height: 1.5vw;
+                        width: 1.5vw;
+                        border: solid 2px white;
+                        rotate: 45deg;
+                        border-radius: 50%;
+                        transition: 0.3s;
+                        cursor: pointer;
+                    }
+            
+                    .control-square-active, .control-square:hover {
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
