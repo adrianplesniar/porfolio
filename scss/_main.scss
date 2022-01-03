@@ -65,11 +65,12 @@ main {
                 width: 100%;
                 border-radius: 0.8rem;
 
-                transition: opacity 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
             }
 
             img:hover {
                 opacity: 0.9;
+                transform: scale(0.99);
             }
         }
     }
