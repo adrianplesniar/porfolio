@@ -9,6 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
     $(document).ready(function() {
+        if ($(document).scrollTop() > 10) {
+        $(".float-button").addClass("floating");
+        } else {
+        $(".float-button").removeClass("floating");
+        }
     $(window).scroll(function() {
         if ($(document).scrollTop() > 10) {
         $(".float-button").addClass("floating");
@@ -127,7 +132,7 @@
     </main>
 
     <script src="/scripts/gallery.js"></script>
-    <script src="/scripts/parallax.js"></script>
+    <!-- <script src="/scripts/parallax.js"></script> -->
     <script src="/scripts/float_buttons.js"></script>
 </body>
 </html>
