@@ -1,6 +1,8 @@
 @supports (-webkit-touch-callout: none) {
     .project-image-gallery {
         .image-arrow-wrapper {
+            display: block;
+            width: auto;
             margin: 0 10%;
     
             .image {
