@@ -15,9 +15,11 @@
         }
     }
 
-    .buttons-wrapper {
-        .btn {
-            bottom: calc(50vh - 40%) !important;
+    body{
+        .buttons-wrapper {
+            .btn {
+                bottom: calc(50vh - 25%);
+            }
         }
     }
 }
