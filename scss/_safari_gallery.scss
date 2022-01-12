@@ -17,7 +17,7 @@
 
     .buttons-wrapper {
         .btn {
-            bottom: calc(50vh - 40%);
+            bottom: calc(50vh - 40%) !important;
         }
     }
 }
