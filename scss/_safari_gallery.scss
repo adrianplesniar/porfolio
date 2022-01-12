@@ -1,0 +1,15 @@
+@supports (-webkit-touch-callout: none) {
+    .project-image-gallery {
+        .image-arrow-wrapper {
+            margin: 0 10%;
+    
+            .image {
+                width: 100%;
+            }
+    
+            .arrow {
+                display: none;
+            }
+        }
+    }
+}
