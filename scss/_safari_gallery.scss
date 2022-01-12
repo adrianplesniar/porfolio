@@ -15,3 +15,21 @@
         }
     }
 }
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    .project-image-gallery {
+        .image-arrow-wrapper {
+            display: block;
+            width: auto;
+            margin: 0 10%;
+    
+            .image {
+                width: 100%;
+            }
+    
+            .arrow {
+                display: none;
+            }
+        }
+    }
+}
