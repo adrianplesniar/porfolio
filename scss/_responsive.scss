@@ -383,6 +383,8 @@
 
 @media (max-width: 600px) {
     header {
+        justify-content: flex-start;
+        padding-top: 20%;
         
         .text-wrapper {
             display: block;
