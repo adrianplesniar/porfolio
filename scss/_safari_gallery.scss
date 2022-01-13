@@ -17,8 +17,13 @@
 
     body{
         .buttons-wrapper {
-            .btn {
-                // bottom: calc(50vh - 25%);
+
+            .btn1 {
+                bottom: calc(50vh - 25%);
+            }
+
+            .btn2 {
+                bottom: calc(50vh - 30%);
             }
         }
     }
