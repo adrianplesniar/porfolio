@@ -447,92 +447,36 @@
 
             .porfolio-wrapper {
                 h4 {
-                    font-size: 2.8vw;
+                    font-size: 4vw;
                 }
             }
 
             .project-wrapper {
                 margin: 0 5%;
 
+                .project-bg {
+                    box-shadow: 0 0 4px 2px rgba(254, 206, 190, 0.56),
+                                0 0 15px 12px rgba(254, 206, 190, 0.32);
+                }
+
                 .project-text {
 
                     h4 {
-                        font-size: 2.7vw;
+                        font-size: 3.9vw;
                     }
-                }
-            
-                .project-bg {
-                    background: radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%),
-                    radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%);
-                    border-radius: 1rem;
-                    box-shadow: 0 0 4px 4px rgba(254, 206, 190, 0.56),
-                                0 0 15px 24px rgba(254, 206, 190, 0.32);
-                }
-            
-                .project-image-gallery {
-                    position: relative;
-                    margin-right: 10%;
-                    margin-bottom: 5%;
-                }
-            
-                .project-text {
-                    position: relative;
-                    padding: 4%;
-                    margin-left: 5%;
-                }
-            }
-            
-            //IMAGE LEFT
-            
-            .project-image-left {
-            
-                .project-text {
-                    align-self: end;
-                    position: relative;
-                    bottom: 0;
-                }
-            
-                .project-image-gallery {
-                    align-self: start;
-                }
-            }
-            
-            //IMAGE RIGHT
-            
-            .project-image-right {
-            
-                .project-text {
-                    align-self: start;
-                    order: (2);
-                }
-            
-                .project-image-gallery {
-                    align-self: end;
-                    position: relative;
-                    bottom: 0;
-                    order: (1);
                 }
             }
             
             //IMAGE GALLERY
             
             .project-image-gallery {
-                display: flex;
-                flex-direction: column;
-            
-                .project-title {
-                    padding: 3% 0;
-                }
             
                 .gallery-controls-wrapper {
-                    display: flex;
-                    justify-content: center;
-                    padding: 3% 0;
-                    gap: 2vw;
             
                     .control-square {
-                        height: 1.5vw;
-                        width: 1.5vw;
+                        margin: 0 2%;
+                        height: 2.4vw;
+                        width: 2.4vw;
                         border: solid 2px white;
                         rotate: 45deg;
                         border-radius: 50%;
@@ -544,6 +488,10 @@
                         background: white;
                     }
                 }
+            }
+
+            .divider {
+                margin: 7% 0 5%;
             }
         }
     }
