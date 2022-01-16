@@ -267,7 +267,7 @@
 
     body {
         main {
-            padding: 5% 0 30%;
+            padding: 5% 0 45%;
 
             .porfolio-wrapper {
                 h4 {
@@ -443,7 +443,11 @@
             background-position-x: center;
         }
         main {
-            padding: 5% 0 30%;
+            footer {
+                padding-top: 30px;
+            }
+
+            padding: 5% 0 60%;
 
             .porfolio-wrapper {
                 h4 {

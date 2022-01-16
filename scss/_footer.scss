@@ -1,0 +1,77 @@
+footer {
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
+
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 80px 0 30px;
+    background: url(/images/footer_bg.png);
+    background-size: cover;
+    background-position-y: top;
+    position: absolute;
+    bottom: 0;
+
+    a {
+        all: unset;
+    }
+
+    .button {
+        float: left;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        background: #fff;
+        overflow: hidden;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        margin: 0 20px;
+    }
+
+    .button span {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+
+    .button:hover {
+        width: 200px;
+    }
+
+    .button:nth-child(1):hover .icon {
+        background: #333;
+    }
+
+    .button:nth-child(2):hover .icon {
+        background: #0e76a8;
+    }
+
+    .button:nth-child(1) span {
+        color: #333;
+    }
+
+    .button:nth-child(2) span {
+        color: #0e76a8;
+    }
+
+    .button .icon {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 50px;
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .button .icon i {
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .button:hover i {
+        color: #fff;
+    }
+}
