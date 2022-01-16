@@ -67,6 +67,7 @@ header {
     bottom: 50px;
     left: 50%;
     animation: slide 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    z-index: 1;
     
     .scroll-btn {
         transform: translateX(-50%) rotate(45deg);
