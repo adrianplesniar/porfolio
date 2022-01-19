@@ -47,7 +47,7 @@
         align-self: start;
     }
 
-    .project-image-gallery {
+    .project-image-gallery, .project-image {
         align-self: end;
         position: relative;
         bottom: -10%;
@@ -133,4 +133,39 @@
     width: 100%;
     height: 2vw;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.164) 85%, rgba(0,0,0,0) 100%);
+}
+
+// FRONT-END PORTFOLIO
+
+.front-porfolio-wrapper {
+
+    .project-title {
+        padding: 3% 0;
+    }
+
+    .image-arrow-wrapper {
+        margin: 0 10%;
+
+        img {
+            width: 100%;
+            transition: all 0.1s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(0.99);
+            opacity: 0.9;
+        }
+    }
+
+    .technologies {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 3% 3%;
+        font-size: 3vw;
+
+        i {
+            margin: 0 3%;
+        }
+    }
 }

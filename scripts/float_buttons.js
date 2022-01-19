@@ -1,7 +1,7 @@
 let btn1 = document.querySelector(".btn1");
 let btn2 = document.querySelector(".btn2");
-let portfolio = document.querySelector(".porfolio-wrapper");
-let resume = document.querySelector(".resume");
+let portfolio = document.querySelector(".front-porfolio-wrapper");
+let resume = document.querySelector(".porfolio-wrapper");
 
 btn1.addEventListener("click", changeViewPorfolio);
 btn2.addEventListener("click", changeViewResume);

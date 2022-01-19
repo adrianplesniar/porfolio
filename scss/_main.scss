@@ -7,7 +7,7 @@ main {
     position: relative;
 
     // PORFOLIO WRAPPER
-    .porfolio-wrapper {
+    .porfolio-wrapper, .front-porfolio-wrapper {
         position: relative;
         top: 70px;
 
@@ -29,50 +29,7 @@ main {
         top: -50px;
     }
 
-    .resume {
+    .porfolio-wrapper {
         display: none;
-    }
-
-    .resume {
-        position: relative;
-        top: 70px;
-        padding: 0 10%;
-        margin-bottom: 100px;
-
-        a {
-            position: relative;
-            z-index: 98;
-        }
-
-        .resume-wrapper {
-            display: flex;
-            justify-content: center;
-
-            .resume-image-wrapper {
-                padding: 30px;
-                max-width: 100%;
-                background: radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%),
-                radial-gradient(circle, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 29%, rgba(0,0,0,0.78) 100%);
-                border-radius: 1rem;
-                box-shadow: 0 0 4px 4px rgba(254, 206, 190, 0.56),
-                    0 0 15px 24px rgba(254, 206, 190, 0.32);
-
-                @media (max-width: 700px) {
-                    padding: 20px;
-                }
-            }
-
-            img {
-                width: 100%;
-                border-radius: 0.8rem;
-
-                transition: all 0.2s ease-in-out;
-            }
-
-            img:hover {
-                opacity: 0.9;
-                transform: scale(0.99);
-            }
-        }
     }
 }
