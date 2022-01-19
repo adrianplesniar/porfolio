@@ -35,6 +35,10 @@
         background: linear-gradient(156deg, rgba(126,42,133,1) 0%, rgba(126,42,133,1) 25%, rgba(184,62,194,1) 50%, rgba(126,42,133,1) 75%, rgba(126,42,133,1) 100%);
         border: 2px solid rgba(0, 0, 0, 0.45);
     }
+
+    .btn:not(.active-view) {
+        background: #00000087;
+    }
     
     .btn:not(.active-view):hover {
         background: #a036aa2f;
@@ -64,7 +68,6 @@
 
     .btn2 {
         right: calc(0vw + 10%);
-        background: #00000087;
     }
 
     .floating {
